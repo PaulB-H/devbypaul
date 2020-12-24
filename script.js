@@ -1,7 +1,9 @@
-const slider = document.querySelector(".gallery");
+const slider = document.querySelector(".content");
 let isDown = false;
 let startX;
 let scrollLeft;
+
+AOS.init();
 
 slider.addEventListener("mousedown", (e) => {
   isDown = true;
@@ -34,7 +36,7 @@ let closestId = document
   .elementFromPoint($(window).width() / 2, $(window).height() / 2)
   .closest("li").id;
 
-$(".gallery").scroll(function () {
+$(".content").scroll(function () {
   let middleElem = document.elementFromPoint(
     $(window).width() / 2,
     $(window).height() / 2
@@ -62,4 +64,16 @@ window.addEventListener("wheel", function (e) {
       document.getElementById("home").scrollIntoView({ behavior: "smooth" });
     }
   }
+});
+
+document.addEventListener("aos:in", ({ detail }) => {
+  // console.log("animated in", detail);
+});
+
+document.addEventListener("aos:out", ({ detail }) => {
+  // console.log("animated out", detail);
+});
+
+$(".portfolioItem").on("click", function () {
+  // console.log("Hello");
 });

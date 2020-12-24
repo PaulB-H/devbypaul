@@ -36,13 +36,13 @@ p {
 
 #navguide {
   position: absolute;
-  bottom: 10%;
+  bottom: 3%;
   user-select: none;
   width: 100%;
   text-align: center;
 }
 
-.gallery {
+.content {
   display: grid;
   grid-template-columns: repeat(10, 100vw);
   grid-template-rows: 1fr;
@@ -71,6 +71,24 @@ li {
   /* border-radius: 3px; */
 }
 
+.portfolioItem {
+  width: 100px;
+  height: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #98b2d0;
+}
+
 #contact p {
   margin: 10px;
 }
+
+/* @media only screen and (min-width: 768px) {
+  .portfolioItem {
+    width: 200px;
+    height: 200px;
+  }
+} */
