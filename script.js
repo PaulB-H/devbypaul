@@ -3,7 +3,7 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
-AOS.init();
+// AOS.init();
 
 slider.addEventListener("mousedown", (e) => {
   isDown = true;
@@ -66,14 +66,23 @@ window.addEventListener("wheel", function (e) {
   }
 });
 
-document.addEventListener("aos:in", ({ detail }) => {
-  // console.log("animated in", detail);
-});
+// document.addEventListener("aos:in", ({ detail }) => {
+//   // console.log("animated in", detail);
+// });
 
-document.addEventListener("aos:out", ({ detail }) => {
-  // console.log("animated out", detail);
-});
+// document.addEventListener("aos:out", ({ detail }) => {
+//   // console.log("animated out", detail);
+// });
 
+let currentDetails;
 $(".portfolioItem").on("click", function () {
-  // console.log("Hello");
+  $("#portfolioItems, #tapforinfo, #portfolioHeader").css("display", "none");
+  currentDetails = $(`.${this.id}`);
+  $(`.${this.id}`).css("display", "flex");
 });
+
+function reset() {
+  $("#portfolioItems").css("display", "grid");
+  $("#tapforinfo, #portfolioHeader").css("display", "initial");
+  currentDetails.css("display", "none");
+}

@@ -33,6 +33,9 @@ h4 {
 p {
   font-family: "Jura", sans-serif;
 }
+hr {
+  margin: 5px 0 10px 0;
+}
 
 #navguide {
   position: absolute;
@@ -80,6 +83,39 @@ li {
   align-items: center;
   text-align: center;
   background: #98b2d0;
+}
+
+#portfolioItems {
+  display: grid;
+  grid-template-areas: ".. ..";
+  background: black;
+  grid-gap: 1px;
+}
+
+.detailcontainer {
+  padding: 5px;
+  max-width: 600px;
+  flex-direction: column;
+  min-height: 403px;
+}
+.detailcontainer a {
+  text-decoration: none;
+}
+.projectHeader {
+  text-align: center;
+  text-decoration: underline;
+}
+.projectSubhead {
+  font-weight: bold;
+}
+
+.resetButton {
+  text-align: center;
+  margin: auto;
+  padding: 0 20px;
+  float: right;
+  border-radius: 10px;
+  border: none;
 }
 
 #contact p {
