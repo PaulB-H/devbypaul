@@ -32,6 +32,7 @@ h4 {
 }
 p {
   font-family: "Jura", sans-serif;
+  font-size: large;
 }
 hr {
   margin: 5px 0 10px 0;
@@ -43,6 +44,7 @@ hr {
   user-select: none;
   width: 100%;
   text-align: center;
+  font-size: small !important;
 }
 
 .content {
