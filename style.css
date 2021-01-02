@@ -62,7 +62,12 @@ hr {
   grid-row-gap: 1rem;
   padding: 1rem; */
 }
-
+/* Below seems to only works on phone swipe events */
+#home,
+#portfolio,
+#contact {
+  scroll-snap-stop: always;
+}
 .active {
   scroll-snap-type: unset;
 }
