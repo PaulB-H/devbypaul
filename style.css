@@ -84,9 +84,9 @@ li {
 
 #portfolioItems {
   display: grid;
-  grid-template-areas: ".. ..";
+  grid-template-areas: ".. .. ..";
   /* background: black; */
-  grid-gap: 3px;
+  grid-gap: 15px;
 }
 .portfolioItem {
   width: 100px;
@@ -103,6 +103,7 @@ li {
   box-shadow: 0px 0px 3px 0px #000000;
 }
 .detailcontainer {
+  margin: 5px;
   padding: 5px;
   max-width: 600px;
   flex-direction: column;
@@ -145,8 +146,7 @@ li {
 }
 
 /* @media only screen and (min-width: 768px) {
-  .portfolioItem {
-    width: 200px;
-    height: 200px;
+  #portfolioItems {
+    grid-gap: 15px;
   }
 } */
