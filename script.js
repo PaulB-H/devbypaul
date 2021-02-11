@@ -11,24 +11,31 @@ $(".content").scroll(function () {
 });
 
 window.addEventListener("wheel", function (e) {
-  if (e.deltaY > 0) {
-    // slider.scrollLeft += window.innerWidth;
-    if (closestId === "home") {
-      document
-        .getElementById("portfolio")
-        .scrollIntoView({ behavior: "smooth" });
-    } else if (closestId === "portfolio") {
-      document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  if (e.deltaX === 0) {
+    console.log("You are using the mousewheel");
+    if (e.deltaY > 0) {
+      // slider.scrollLeft += window.innerWidth;
+      if (closestId === "home") {
+        document
+          .getElementById("portfolio")
+          .scrollIntoView({ behavior: "smooth" });
+      } else if (closestId === "portfolio") {
+        document
+          .getElementById("contact")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // slider.scrollLeft -= window.innerWidth;
+      if (closestId === "contact") {
+        document
+          .getElementById("portfolio")
+          .scrollIntoView({ behavior: "smooth" });
+      } else if (closestId === "portfolio") {
+        document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+      }
     }
   } else {
-    // slider.scrollLeft -= window.innerWidth;
-    if (closestId === "contact") {
-      document
-        .getElementById("portfolio")
-        .scrollIntoView({ behavior: "smooth" });
-    } else if (closestId === "portfolio") {
-      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
-    }
+    console.log("You are using the trackpad");
   }
 });
 
