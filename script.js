@@ -1,37 +1,3 @@
-// const slider = document.querySelector(".content");
-// let isDown = false;
-// let startX;
-// let scrollLeft;
-
-// // AOS.init();
-
-// slider.addEventListener("mousedown", (e) => {
-//   isDown = true;
-//   slider.classList.add("active");
-//   startX = e.pageX - slider.offsetLeft;
-//   scrollLeft = slider.scrollLeft;
-// });
-// slider.addEventListener("mouseleave", (_) => {
-//   isDown = false;
-//   slider.classList.remove("active");
-// });
-// slider.addEventListener("mouseup", (_) => {
-//   isDown = false;
-//   slider.classList.remove("active");
-//   slider.style.userSelect = "initial";
-//   slider.style.cursor = "initial";
-// });
-// slider.addEventListener("mousemove", (e) => {
-//   if (!isDown) return;
-//   e.preventDefault();
-//   const x = e.pageX - slider.offsetLeft;
-//   const SCROLL_SPEED = 3;
-//   const walk = (x - startX) * SCROLL_SPEED;
-//   slider.scrollLeft = scrollLeft - walk;
-//   slider.style.userSelect = "none";
-//   slider.style.cursor = "grabbing";
-// });
-
 let closestId = document
   .elementFromPoint($(window).width() / 2, $(window).height() / 2)
   .closest("li").id;
@@ -65,14 +31,6 @@ window.addEventListener("wheel", function (e) {
     }
   }
 });
-
-// document.addEventListener("aos:in", ({ detail }) => {
-//   // console.log("animated in", detail);
-// });
-
-// document.addEventListener("aos:out", ({ detail }) => {
-//   // console.log("animated out", detail);
-// });
 
 let currentDetails;
 $(".portfolioItem").on("click", function () {
