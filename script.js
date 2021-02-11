@@ -90,3 +90,12 @@ function reset() {
 function scrollPortfolio() {
   document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
 }
+
+function copyEmail() {
+  let text = "p.bernardhall@gmail.com";
+  navigator.clipboard.writeText(text);
+  document.getElementById("copy-email").innerHTML = "Copied to clipboard!";
+  window.setTimeout(() => {
+    document.getElementById("copy-email").innerHTML = "Copy Email";
+  }, 5000);
+}
