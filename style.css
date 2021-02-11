@@ -37,6 +37,9 @@ p {
 hr {
   margin: 5px 0 5px 0;
 }
+a:hover {
+  cursor: pointer;
+}
 
 #navguide {
   position: absolute;
