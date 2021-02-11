@@ -28,7 +28,7 @@
     <p id="navguide">Click & Drag, Swipe, or Scroll</p>
 
     <ul class="content">
-      <li id="home" style="background: #dcdccb">
+      <li id="home" style="background: #dcdccb; position: relative">
         <h1>Paul <span style="white-space: nowrap">Bernard-Hall</span></h1>
         <img
           class="profilepic"
@@ -37,6 +37,20 @@
           style="clip-path: circle(47.5% at 50% 52%); margin: 10px"
         />
         <p>Full-Stack Web Developer focusing on MERN</p>
+        <a
+          style="
+            font-size: 2em;
+            position: absolute;
+            bottom: 5em;
+            font-family: 'Jura', sans-serif;
+          "
+          onclick="scrollPortfolio()"
+        >
+          Portfolio<i
+            class="ri-arrow-right-s-line"
+            style="vertical-align: sub"
+          ></i>
+        </a>
       </li>
       <!-- End Home Section -->
 
