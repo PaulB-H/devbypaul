@@ -57,8 +57,8 @@ function reset() {
   currentDetails.css("display", "none");
 }
 
-function scrollPortfolio() {
-  document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
+function navScroll(id) {
+  document.getElementById(`${id}`).scrollIntoView({ behavior: "smooth" });
 }
 
 function copyEmail() {
