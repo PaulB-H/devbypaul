@@ -86,3 +86,7 @@ function reset() {
   $("#tapforinfo, #portfolioHeader").css("display", "initial");
   currentDetails.css("display", "none");
 }
+
+function scrollPortfolio() {
+  document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
+}
