@@ -17,7 +17,7 @@ $(".content").scroll(function () {
 // the smooth  part of '.scrollIntoView({ behavior: "smooth" })'
 window.addEventListener("wheel", function (e) {
   if (e.deltaX === 0) {
-    console.log("You are using the mousewheel");
+    // console.log("You are using the mousewheel");
     if (e.deltaY > 0) {
       // slider.scrollLeft += window.innerWidth;
       if (closestId === "home") {
@@ -40,7 +40,7 @@ window.addEventListener("wheel", function (e) {
       }
     }
   } else {
-    console.log("You are using the trackpad");
+    // console.log("You are using the trackpad");
   }
 });
 
