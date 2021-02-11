@@ -37,7 +37,8 @@ p {
 hr {
   margin: 5px 0 5px 0;
 }
-a:hover {
+a:hover,
+button:hover {
   cursor: pointer;
 }
 
