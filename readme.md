@@ -4,8 +4,9 @@
 
 <p>I wanted a design that would allow natural movement between pages with click & drag, touch swipes, and mouse scroll. I know horizontal portfolios are not common, but I prefer the way they scroll on mobile, especially due to the way the URL bar gets shown/hidden.</p>
 
-<p>Because during a swipe up / down the scroll bar can show or hide, it makes developing a layout focused on 100% vh pages difficult to do smoothly, without 'jerky' repisitioning of elements after the URL bar has been shown or hidden.<br>
-Currently I have the click & drag navigation disabled as it was causing problems on Safari & iOS devices.</p>
+<p>On a mobile device / browser, during a swipe up or down, the URL bar can show or hide. This makes developing a layout focused on 100% VH pages difficult to do smoothly, without 'jerky' repositioning of elements after the URL bar has been shown or hidden.</p>
+
+<p>Currently I have the click & drag navigation disabled as it was causing problems on Safari & iOS devices.</p>
 
 <p>I discovered scroll-snap and scroll-snap-stop which were used to make a natural and smooth swipe experience on mobile devices.</p>
 
