@@ -10,6 +10,11 @@ $(".content").scroll(function () {
   closestId = middleElem.closest("li").id;
 });
 
+// Note: Still possible to log 0 horizontal movement
+// when using laptop track pad, triggering action I wanted specifically
+// for mousewheel
+// Not as much of an issue since 'smooth-scroll polyfill' fixed
+// the smooth  part of '.scrollIntoView({ behavior: "smooth" })'
 window.addEventListener("wheel", function (e) {
   if (e.deltaX === 0) {
     console.log("You are using the mousewheel");
