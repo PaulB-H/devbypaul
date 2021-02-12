@@ -90,7 +90,7 @@ li {
 .navScroll {
   font-size: 2em;
   position: absolute;
-  bottom: 1%;
+  bottom: 0%;
   font-family: "Jura", sans-serif;
   user-select: none;
 }
