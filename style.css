@@ -86,6 +86,20 @@ li {
   /* border-radius: 3px; */
 }
 
+.navScroll {
+  font-size: 2em;
+  position: absolute;
+  bottom: 5%;
+  font-family: "Jura", sans-serif;
+  user-select: none;
+}
+.navLeft {
+  left: 5%;
+}
+.navRight {
+  right: 5%;
+}
+
 #portfolioItems {
   display: grid;
   grid-template-areas: ".. .. ..";
