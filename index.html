@@ -65,8 +65,9 @@
           <div id="designsbytabitha" class="portfolioItem">
             <p>Designs by<br />Tabitha</p>
           </div>
-          <div id="xcelSolutions" class="portfolioItem">
-            <p>Xcel<br />Solutions</p>
+
+          <div id="ibansalcpa" class="portfolioItem">
+            <p>IBansal<br />CPA</p>
           </div>
           <div id="workoutLog" class="portfolioItem">
             <p>Workout<br />Log</p>
@@ -80,8 +81,8 @@
           <!-- <div id="fitnessHub" class="portfolioItem">
             <p>Fitness<br />Hub</p>
           </div> -->
-          <div id="ibansalcpa" class="portfolioItem">
-            <p>IBansal<br />CPA</p>
+          <div id="xcelSolutions" class="portfolioItem">
+            <p>Xcel<br />Solutions</p>
           </div>
           <div id="pokeSim" class="portfolioItem"><p>Poke-Sim</p></div>
           <div id="calculator" class="portfolioItem"><p>Calculator</p></div>
@@ -164,40 +165,40 @@
           <button class="resetButton" onclick="reset()"><p>CLOSE</p></button>
         </div>
 
-        <div class="xcelSolutions detailcontainer" style="display: none">
-          <h3 class="projectHeader">Xcel Solutions</h3>
+        <div class="ibansalcpa detailcontainer" style="display: none">
+          <h3 class="projectHeader">ibansalcpa.com</h3>
 
           <p class="projectDesc" style="text-indent: 25px; margin: 5px 0">
-            This was one of my earliest projects after graduating, and my first
-            time working with WordPress. There are many free plugins which make
-            things like blogs easy to setup.
+            A minimal page made for an accountant. Secured with SSL through
+            CertBot / LetsEncrypt, and hosted on a Ubuntu VPS with NGINX. I also
+            setup some basic server security such as restricting root access
+            over SSH, and implementing an auto-IP banning service to stop brute
+            force access attempts.
           </p>
 
           <p class="projectDesc" style="text-indent: 25px; margin: 5px 0">
-            There was already some sort of a template in place, and wanting to
-            learn more I started out by trying to customize things in that
-            template, instead of working from an empty one. This ended up
-            causing quite a few headaches as I tried to figure out how to
-            override some default stylings and actions that came with the theme.
+            I wanted to lock this to scroll section by section. I applied spans
+            with the rule "white-space: nowrap" to make sure things like email
+            and phone number did not line-break in an awkward spot. I used a
+            library called Animate on Scroll to make the page feel more dynamic.
           </p>
 
           <p class="projectSubhead">Links</p>
-          <a
-            class="livelink"
-            href="http://www.xcelsolutions.ca"
-            target="_blank"
-          >
+          <a href="https://www.ibansalcpa.com" target="_blank">
             <p>- Live Site</p>
           </a>
-          <a class="repolink" href="#">
-            <strike>
-              <p>- Github Repo</p>
-            </strike>
+          <a href="https://github.com/PaulB-H/inderjit_cpa" target="_blank">
+            <p>- Github Repo</p>
           </a>
 
           <hr />
 
-          <p><sub>Wordpress, HTML, CSS, JS</sub></p>
+          <p>
+            <sub
+              >HTML, CSS, JavaScript,
+              <a href="https://michalsnik.github.io/aos/">AOS</a></sub
+            >
+          </p>
 
           <button class="resetButton" onclick="reset()"><p>Back</p></button>
         </div>
@@ -353,40 +354,45 @@
           </a>
           <button class="resetButton" onclick="reset()"><p>Back</p></button>
         </div> -->
-        <div class="ibansalcpa detailcontainer" style="display: none">
-          <h3 class="projectHeader">ibansalcpa.com</h3>
+        <div class="xcelSolutions detailcontainer" style="display: none">
+          <h3 class="projectHeader">Xcel Solutions</h3>
 
           <p class="projectDesc" style="text-indent: 25px; margin: 5px 0">
-            A minimal page made for an accountant. Secured with SSL through
-            CertBot / LetsEncrypt, and hosted on a Ubuntu VPS with NGINX. I also
-            setup some basic server security such as restricting root access
-            over SSH, and implementing an auto-IP banning service to stop brute
-            force access attempts.
+            This was one of my earliest projects after graduating, and my first
+            time working with WordPress. There are many free plugins which make
+            things like blogs easy to setup.
           </p>
 
           <p class="projectDesc" style="text-indent: 25px; margin: 5px 0">
-            I wanted to lock this to scroll section by section. I applied spans
-            with the rule "white-space: nowrap" to make sure things like email
-            and phone number did not line-break in an awkward spot. I used a
-            library called Animate on Scroll to make the page feel more dynamic.
+            There was already some sort of a template in place, and wanting to
+            learn more I started out by trying to customize things in that
+            template, instead of working from an empty one.
+          </p>
+
+          <p class="projectDesc" style="text-indent: 25px; margin: 5px 0">
+            I had some issues optimizing this site, so it will take a second or
+            two to load. I tried using some plugins to defer unused styles and
+            scripts from the default theme, but I will need a full rebuild to
+            make it right
           </p>
 
           <p class="projectSubhead">Links</p>
-          <a href="https://www.ibansalcpa.com" target="_blank">
+          <a
+            class="livelink"
+            href="http://www.xcelsolutions.ca"
+            target="_blank"
+          >
             <p>- Live Site</p>
           </a>
-          <a href="https://github.com/PaulB-H/inderjit_cpa" target="_blank">
-            <p>- Github Repo</p>
+          <a class="repolink" href="#">
+            <strike>
+              <p>- Github Repo</p>
+            </strike>
           </a>
 
           <hr />
 
-          <p>
-            <sub
-              >HTML, CSS, JavaScript,
-              <a href="https://michalsnik.github.io/aos/">AOS</a></sub
-            >
-          </p>
+          <p><sub>Wordpress, HTML, CSS, JS</sub></p>
 
           <button class="resetButton" onclick="reset()"><p>Back</p></button>
         </div>
