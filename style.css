@@ -100,6 +100,12 @@ li {
   right: 5%;
 }
 
+.profile-img {
+  clip-path: circle(47.5% at 50% 52%);
+  -webkit-clip-path: circle(47.5% at 50% 52%);
+  margin: 10px;
+}
+
 #portfolioItems {
   display: grid;
   grid-template-areas: ".. .. ..";
