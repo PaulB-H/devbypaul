@@ -356,22 +356,20 @@
         <div class="ibansalcpa detailcontainer" style="display: none">
           <h3 class="projectHeader">ibansalcpa.com</h3>
 
-          <p>
-            A lightweight frontend page hosted on my own VPS (the same one that
-            hosts this site) through a different NGINX server block.
+          <p class="projectDesc" style="text-indent: 25px; margin: 5px 0">
+            A minimal page made for an accountant. Secured with SSL through
+            CertBot / LetsEncrypt, and hosted on a Ubuntu VPS with NGINX. I also
+            setup some basic server security such as restricting root access
+            over SSH, and implementing an auto-IP banning service to stop brute
+            force access attempts.
           </p>
 
-          <hr />
-
-          <p>
-            I wanted to lock this to scroll section by section. One of the
-            issues I ran into was getting smoothscroll to work on ios, which was
-            caused by conflict with a function to allow click and drag
-            navigation between pages. Added a few quick animations with Animate
-            on Scroll.
+          <p class="projectDesc" style="text-indent: 25px; margin: 5px 0">
+            I wanted to lock this to scroll section by section. I applied spans
+            with the rule "white-space: nowrap" to make sure things like email
+            and phone number did not line-break in an awkward spot. I used a
+            library called Animate on Scroll to make the page feel more dynamic.
           </p>
-
-          <hr />
 
           <p class="projectSubhead">Links</p>
           <a href="https://www.ibansalcpa.com" target="_blank">
@@ -380,6 +378,16 @@
           <a href="https://github.com/PaulB-H/inderjit_cpa" target="_blank">
             <p>- Github Repo</p>
           </a>
+
+          <hr />
+
+          <p>
+            <sub
+              >HTML, CSS, JavaScript,
+              <a href="https://michalsnik.github.io/aos/">AOS</a></sub
+            >
+          </p>
+
           <button class="resetButton" onclick="reset()"><p>Back</p></button>
         </div>
 
