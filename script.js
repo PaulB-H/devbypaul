@@ -97,4 +97,13 @@ document.addEventListener("DOMContentLoaded", () => {
       );
     }, 850);
   }, 3000);
+
+  const profileImg = document.querySelector(".profile-img");
+  let clicks = 0;
+
+  profileImg.addEventListener("click", (e) => {
+    clicks++;
+    if (clicks === 10)
+      document.location.href = "https://www.devbypaul.ca/secret.html";
+  });
 });
