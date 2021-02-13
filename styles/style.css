@@ -1,7 +1,8 @@
 /* 
   Headings  font-family: "Playfair Display", serif;
-  Text      font-family: "Jura", sans-serif;
   Text      font-family: 'Nanum Gothic', sans-serif;
+
+  Text      font-family: "Jura", sans-serif; - REMOVED
 */
 
 * {
