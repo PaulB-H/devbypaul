@@ -69,3 +69,18 @@ function copyEmail() {
     document.getElementById("copy-email").innerHTML = "Copy Email";
   }, 5000);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM Loaded");
+  let portfolioItems = document.querySelectorAll(".portfolioItem");
+  setInterval(() => {
+    let rand = Math.floor(Math.random() * 8);
+    portfolioItems[rand].classList.add("animate__animated", "animate__wobble");
+    setTimeout(() => {
+      portfolioItems[rand].classList.remove(
+        "animate__animated",
+        "animate__wobble"
+      );
+    }, 2000);
+  }, 4000);
+});
