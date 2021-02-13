@@ -71,11 +71,19 @@ function copyEmail() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM Loaded");
   let portfolioItems = document.querySelectorAll(".portfolioItem");
+  let randomUsed = new Set();
   setInterval(() => {
-    let rand = Math.floor(Math.random() * 8);
+    if (randomUsed.size === 9) randomUsed = new Set();
+    let rand;
+
+    do {
+      rand = Math.floor(Math.random() * 9);
+    } while (randomUsed.has(rand));
+
+    randomUsed.add(rand);
     portfolioItems[rand].classList.add("animate__animated", "animate__wobble");
+
     setTimeout(() => {
       portfolioItems[rand].classList.remove(
         "animate__animated",
