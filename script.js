@@ -72,15 +72,22 @@ function copyEmail() {
 
 document.addEventListener("DOMContentLoaded", () => {
   let portfolioItems = document.querySelectorAll(".portfolioItem");
+
   let randomUsed = new Set();
+  let rand;
+  let lastRand;
+
   setInterval(() => {
-    if (randomUsed.size === 9) randomUsed = new Set();
-    let rand;
+    if (randomUsed.size === 9) {
+      randomUsed = new Set();
+    }
 
     do {
       rand = Math.floor(Math.random() * 9);
-    } while (randomUsed.has(rand));
+      if (rand === lastRand) console.log("rand === lastRand, roll again");
+    } while (randomUsed.has(rand) || rand === lastRand);
 
+    lastRand = rand;
     randomUsed.add(rand);
     portfolioItems[rand].classList.add("animate__animated", "animate__wobble");
 
@@ -90,5 +97,5 @@ document.addEventListener("DOMContentLoaded", () => {
         "animate__wobble"
       );
     }, 2000);
-  }, 4000);
+  }, 3000);
 });
