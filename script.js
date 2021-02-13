@@ -84,7 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     do {
       rand = Math.floor(Math.random() * 9);
-      if (rand === lastRand) console.log("rand === lastRand, roll again");
     } while (randomUsed.has(rand) || rand === lastRand);
 
     lastRand = rand;
