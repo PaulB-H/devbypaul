@@ -114,8 +114,8 @@ li {
   grid-gap: 15px;
 }
 .portfolioItem {
-  width: 100px;
-  height: 100px;
+  width: 105px;
+  height: 105px;
   /* border: 1px solid black; */
   display: flex;
   justify-content: center;
