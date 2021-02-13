@@ -96,6 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "animate__animated",
         "animate__wobble"
       );
-    }, 2000);
+    }, 850);
   }, 3000);
 });
