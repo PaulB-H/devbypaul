@@ -170,6 +170,7 @@ li {
   border: 1px solid black;
   border-radius: 10px;
   background: white;
+  font-size: 1.15em;
 }
 .close-icon {
   vertical-align: sub;
