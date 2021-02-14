@@ -1,9 +1,11 @@
 /* 
-  Headings  font-family: "Benne", serif; 
+  Headings  font-family: "EB+Garamond", serif;
   Text      font-family: 'Nanum Gothic', sans-serif;
-
-  Text      font-family: "Jura", sans-serif;        - REMOVED
-  Headings  font-family: "Playfair Display", serif; - REMOVED
+  
+  Previously used fonts
+  Text      font-family: "Jura", sans-serif;
+  Headings  font-family: "Playfair Display", serif;
+  Headings  font-family: "Benne", serif;
 */
 
 * {
@@ -31,8 +33,7 @@ h1,
 h2,
 h3,
 h4 {
-  /* font-family: "Playfair Display", serif; */
-  font-family: "Benne", serif;
+  font-family: "EB Garamond", serif;
 }
 p {
   font-family: "Nanum Gothic", sans-serif;
@@ -147,7 +148,7 @@ li {
   font-size: 2em;
   text-align: center;
   text-decoration: none;
-  margin-bottom: -10px;
+  /* margin-bottom: -10px; */
 }
 .projectSubhead {
   font-weight: bold;
