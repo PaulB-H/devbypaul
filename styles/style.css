@@ -144,7 +144,7 @@ li {
 .projectHeader {
   font-size: 2em;
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .projectSubhead {
   font-weight: bold;
