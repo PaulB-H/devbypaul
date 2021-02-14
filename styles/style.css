@@ -34,7 +34,7 @@ h4 {
 }
 p {
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 hr {
   margin: 5px 0 5px 0;
@@ -150,9 +150,21 @@ li {
   font-weight: bold;
   margin-bottom: 5px;
 }
+.projectDesc {
+  text-indent: 25px;
+  margin: 5px 5px;
+  text-align: justify;
+  line-height: 1.1em;
+}
 .detailcontainer a {
   text-decoration: none;
   margin-bottom: 5px;
+}
+.project-links {
+  max-width: max-content;
+}
+.project-links p {
+  padding: 5px 0;
 }
 .livelink,
 .repolink {
