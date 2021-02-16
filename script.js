@@ -15,32 +15,35 @@ $(".content").scroll(function () {
 // for mousewheel
 // Not as much of an issue since 'smooth-scroll polyfill' fixed
 // the smooth  part of '.scrollIntoView({ behavior: "smooth" })'
+let disableWheel = false;
 window.addEventListener("wheel", function (e) {
-  if (e.deltaX === 0) {
-    // console.log("You are using the mousewheel");
-    if (e.deltaY > 0) {
-      // slider.scrollLeft += window.innerWidth;
-      if (closestId === "home") {
-        document
-          .getElementById("portfolio")
-          .scrollIntoView({ behavior: "smooth" });
-      } else if (closestId === "portfolio") {
-        document
-          .getElementById("contact")
-          .scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      // slider.scrollLeft -= window.innerWidth;
-      if (closestId === "contact") {
-        document
-          .getElementById("portfolio")
-          .scrollIntoView({ behavior: "smooth" });
-      } else if (closestId === "portfolio") {
-        document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+  if (!disableWheel) {
+    if (e.deltaX === 0) {
+      // console.log("Y-Axis Only Scroll");
+      if (e.deltaY > 0) {
+        // slider.scrollLeft += window.innerWidth;
+        if (closestId === "home") {
+          document
+            .getElementById("portfolio")
+            .scrollIntoView({ behavior: "smooth" });
+        } else if (closestId === "portfolio") {
+          document
+            .getElementById("contact")
+            .scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // slider.scrollLeft -= window.innerWidth;
+        if (closestId === "contact") {
+          document
+            .getElementById("portfolio")
+            .scrollIntoView({ behavior: "smooth" });
+        } else if (closestId === "portfolio") {
+          document
+            .getElementById("home")
+            .scrollIntoView({ behavior: "smooth" });
+        }
       }
     }
-  } else {
-    // console.log("You are using the trackpad");
   }
 });
 
