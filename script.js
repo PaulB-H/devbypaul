@@ -52,13 +52,21 @@ $(".portfolioItem").on("click", function () {
   $("#portfolioItems, #tapforinfo, #portfolioHeader").css("display", "none");
   currentDetails = $(`.${this.id}`);
   $(`.${this.id}`).css("display", "flex");
+  $(`.${this.id}`).css("z-index", "11");
+
+  $(`#overlay`).css("display", "inline");
+  disableWheel = true;
 });
 
 function reset() {
   $("#portfolioItems").css("display", "grid");
   $("#tapforinfo, #portfolioHeader").css("display", "initial");
   currentDetails.css("display", "none");
+  $(`#overlay`).css("display", "none");
+  $(`.content`).css("overflow-x", "scroll");
+  disableWheel = false;
 }
+window.addEventListener("resize", reset);
 
 function navScroll(id) {
   document.getElementById(`${id}`).scrollIntoView({ behavior: "smooth" });
