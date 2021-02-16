@@ -54,6 +54,10 @@ $(".portfolioItem").on("click", function () {
   $(`.${this.id}`).css("display", "flex");
   $(`.${this.id}`).css("z-index", "11");
 
+  $(`.content`).css("overflow-x", "hidden");
+  $(".content").css("scroll-snap-type", "none");
+  $(".content").css("overflow-y", "scroll");
+
   $(`#overlay`).css("display", "inline");
   disableWheel = true;
 });
@@ -63,7 +67,11 @@ function reset() {
   $("#tapforinfo, #portfolioHeader").css("display", "initial");
   currentDetails.css("display", "none");
   $(`#overlay`).css("display", "none");
+
   $(`.content`).css("overflow-x", "scroll");
+  $(".content").css("scroll-snap-type", "both mandatory");
+  $(".content").css("overflow-y", "hidden");
+
   disableWheel = false;
 }
 window.addEventListener("resize", reset);
