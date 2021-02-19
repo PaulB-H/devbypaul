@@ -56,7 +56,9 @@ $(".portfolioItem").on("click", function () {
 
   $(`.content`).css("overflow-x", "hidden");
   $(".content").css("scroll-snap-type", "none");
-  $(".content").css("overflow-y", "scroll");
+
+  $("#portfolio").css("overflow-y", "auto");
+  $(`.${this.id}`).css("overflow-y", "auto");
 
   $(`#overlay`).css("display", "inline");
   disableWheel = true;
@@ -70,7 +72,9 @@ function reset() {
 
   $(`.content`).css("overflow-x", "scroll");
   $(".content").css("scroll-snap-type", "both mandatory");
-  $(".content").css("overflow-y", "hidden");
+
+  $("#portfolio").css("overflow-y", "hidden");
+  $(`.${this.id}`).css("overflow-y", "hidden");
 
   disableWheel = false;
 }

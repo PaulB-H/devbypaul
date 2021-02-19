@@ -1,6 +1,10 @@
-# PaulB-H Portfolio
+<h3>Note: Archived. Rebuilt from scratch.</h3>
 
-##### Update for 2021
+<a href="https://github.com/PaulB-H/devbypaul_redesign" target="_blank"><h3>New repo</h3></a>
+
+<hr />
+
+#### Portfolio
 
 <p>I wanted a design that would allow natural movement between pages with click & drag, touch swipes, and mouse scroll. I know horizontal portfolios are not common, but I prefer the way they scroll on mobile, especially due to the way the URL bar gets shown/hidden.</p>
 
@@ -21,4 +25,3 @@
 
 <p>Deployed with NGINX on a Ubuntu VPS</p>
 <p>SSL with Certbot</p>
-I also have [ibansalcpa.com](ibansalcpa.com) deployed on the same VPS, just through a different NGINX server block

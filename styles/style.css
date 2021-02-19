@@ -191,7 +191,7 @@ li {
 
 .resetButton {
   position: absolute;
-  bottom: 0;
+  bottom: 4%;
   right: 0;
   margin: auto 1% 1% auto;
   min-width: max-content;
@@ -202,6 +202,7 @@ li {
   background: white;
   font-size: 1.15em;
   color: #505760;
+  position: relative;
 }
 .close-icon {
   vertical-align: sub;
